@@ -71,9 +71,9 @@ jobs:
     needs: build
 
     steps:
-      - name: Delete old images (keep 5)
+      - name: Delete old images (keep 3)
         uses: actions/delete-package-versions@v5
         with:
           package-name: nanobot
           package-type: container
-          min-versions-to-keep: 5
+          min-versions-to-keep: 3
